@@ -2,17 +2,19 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+*, *:: before, *:: after {
+  box-sizing: border-box;
+}
 html,
 body {
-
-    position: relative;
-    width: 1920px;
-    height: 1080px;
-
-    background: #355C7D;
+  padding: 0;
+  margin: 0;
+  background-color: #355c7d;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.2em;
+  color: #131e27;
+  min-height: 100vh;
 }
-
 div,
 span,
 applet,
@@ -80,7 +82,75 @@ embed,
 figure,
 figcaption,
 footer,
-header,
+header {
+  color: inherit;
+}
+.home-main-text-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 80px;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.mainNav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mainNav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 2rem;
+}
+
+.mainNav a:hover {
+  color: #637381;
+}
+.full-height-grow {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleName {
+  color: inherit;
+}
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.home-main-text-title {
+  font: inherit;
+  font-weight: 500;
+  font-size: 2em;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+.paragraphBody {
+  font: inherit;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+.home-main-section {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
 hgroup,
 menu,
 nav,
@@ -92,34 +162,38 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
 article {
-    position: absolute;
-    width: 698px;
-    height: 444px;
-    left: 535px;
-    top: 171px;
+  position: absolute;
+  width: 547px;
+  height: 926px;
+  right: 98px;
+  top: 74px;
 
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 59px;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 27px;
 
-    color: #000000;
+  color: #131e27;
 
-    border: 1px solid #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+#portrait {
+  position: absolute;
+  width: 132px;
+  height: 204px;
+}
 aside,
 details,
 figcaption,
@@ -130,32 +204,32 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: "";
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
