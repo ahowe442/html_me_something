@@ -15,6 +15,7 @@ body {
   color: #131e27;
   min-height: 100vh;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  list-style: none;
 }
 
 header {
@@ -31,22 +32,26 @@ header {
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.mainNav ul {
+.mainNav ul,
+.footerNav ul {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.mainNav a {
+.mainNav a,
+.footerNav a {
   color: inherit;
   text-decoration: none;
-  padding: 2rem;
+  padding: 1rem;
 }
 
-.mainNav a:hover {
+.mainNav a:hover,
+.footerNav a:hover {
   color: #637381;
 }
+
 .full-height-grow {
   display: flex;
   flex-direction: column;
@@ -56,17 +61,46 @@ header {
   color: inherit;
 }
 
-.mainHeader {
+.mainHeader,
+.mainFooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.mainHeader {
   height: 140px;
 }
+
+.mainFooter .container {
+  display: flex;
+  justify-content: space-between;
+}
+.mainFooter img {
+  border-radius: 4px;
+  padding: 5px;
+  width: 20px;
+  justify-items: center;
+  font-size: 0.5em;
+}
+.mainFooter {
+  height: 70px;
+  background: linear-gradient(
+    89.51deg,
+    #432e54 18.26%,
+    rgba(248, 177, 149, 0.7) 101.64%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainFooter p {
+  font-size: 9px;
+}
 .container {
-  max-width: 1200px;
+  max-width: 1480px;
   margin: 0 auto;
   padding: 0 40px;
 }
+
 .home-main-text-title {
   font: inherit;
   font-weight: 500;
